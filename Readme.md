@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Default.aspx](./CS/TwoDetailGrids/Default.aspx) (VB: [Default.aspx.vb](./VB/TwoDetailGrids/Default.aspx.vb))
+* [Default.aspx](./CS/TwoDetailGrids/Default.aspx) (VB: [Default.aspx](./VB/TwoDetailGrids/Default.aspx))
 * [Default.aspx.cs](./CS/TwoDetailGrids/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/TwoDetailGrids/Default.aspx.vb))
 <!-- default file list end -->
 # An example of a master-detail ASPxGridView with more than one detail level
