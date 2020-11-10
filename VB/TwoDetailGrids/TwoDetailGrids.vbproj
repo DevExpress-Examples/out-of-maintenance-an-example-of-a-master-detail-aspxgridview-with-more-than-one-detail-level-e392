@@ -24,6 +24,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,26 +33,27 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Docs.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Web.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core">
@@ -91,7 +93,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

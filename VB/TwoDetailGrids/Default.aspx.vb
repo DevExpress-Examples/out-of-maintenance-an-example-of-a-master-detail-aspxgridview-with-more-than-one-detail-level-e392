@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections
 Imports System.Configuration
 Imports System.Data
@@ -16,6 +15,7 @@ Imports DevExpress.Web.ASPxGridView
 Namespace TwoDetailGrids
 	Partial Public Class _Default
 		Inherits System.Web.UI.Page
+
 		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 		End Sub
