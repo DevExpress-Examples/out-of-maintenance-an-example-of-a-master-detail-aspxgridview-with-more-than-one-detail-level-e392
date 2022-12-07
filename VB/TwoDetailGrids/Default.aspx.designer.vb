@@ -29,7 +29,7 @@ Namespace TwoDetailGrids
 		''' Auto-generated field.
 		''' To modify move field declaration from designer file to code-behind file.
 		''' </remarks>
-		Protected grid As Global.DevExpress.Web.ASPxGridView.ASPxGridView
+		Protected grid As Global.DevExpress.Web.ASPxGridView
 
 		''' <summary>
 		''' masterDataSource control.

@@ -10,7 +10,7 @@ Imports System.Web.UI.HtmlControls
 Imports System.Web.UI.WebControls
 Imports System.Web.UI.WebControls.WebParts
 Imports System.Xml.Linq
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 
 Namespace TwoDetailGrids
 	Partial Public Class _Default
